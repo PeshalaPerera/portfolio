@@ -7,8 +7,8 @@
 
 :root {
     --color-primary: #191d2b;
-    --color-secondary: #27AE60;
-    --color-white: #FFFFFF;
+    --color-secondary: #27ae60;
+    --color-white: #ffffff;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey-1: #dbe1e8;
@@ -18,12 +18,12 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .light-mode {
-    --color-primary: #FFFFFF;
-    --color-secondary: #F56692;
+    --color-primary: #ffffff;
+    --color-secondary: #f56692;
     --color-white: #454e56;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -37,7 +37,8 @@
 
 body {
     background-color: var(--color-primary);
-    font-family: "Overpass", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Overpass', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
     font-size: 1.1rem;
     color: var(--color-white);
     transition: all 0.4s ease-in-out;
@@ -121,7 +122,7 @@ section {
     border: 0;
     border-radius: 3.5rem/100%;
     position: relative;
-    color: #FFFFFF !important;
+    color: #ffffff !important;
 }
 
 .controls-wrapper .control i {
@@ -279,7 +280,7 @@ section {
 }
 
 .about-container .right-about .about-item .abt-text .small-text::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 15px;
@@ -383,7 +384,7 @@ section {
 }
 
 .stat-title::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 50%;
     top: 0;
@@ -741,7 +742,7 @@ section {
 }
 
 .main-btn::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;

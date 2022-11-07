@@ -3,25 +3,28 @@
 :root {
     --color-primary: #191d2b;
     --color-secondary: #27ae60;
+    --color-content-1: hsla(271, 78%, 61%, 0.81);
     --color-white: #ffffff;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
+    --color-black: #000000;
+    --color-grey-0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
     --color-grey-3: #6c7983;
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
-    --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+    --box-shadow-2: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    --br-sm-2: 14px;
 }
 
 .light-mode {
     --color-primary: #ffffff;
     --color-secondary: #f56692;
+    --color-content-1: hsla(271, 78%, 61%, 0.81);
     --color-white: #454e56;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
+    --color-black: #000000;
+    --color-grey-0: #f8f8f8;
     --color-grey-1: #6c7983;
     --color-grey-2: #6c7983;
     --color-grey-3: #6c7983;
@@ -127,20 +130,17 @@ a {
 /* Theme switcher */
 
 .theme-btn {
-    border-radius: 50%;
-    background-color: var(--color-grey-4);
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.1s ease-in-out;
 }
 
 .theme-btn i {
     font-size: 1.4rem;
-    color: var(--color-grey-2);
     pointer-events: none;
+    color: var(--color-grey-2);
 }
 
 /* Navigation menu */
@@ -175,7 +175,7 @@ a {
 }
 
 .controls-wrapper .active-btn {
-    background-color: hsla(271, 62%, 28%, 0.81);
+    background-color: var(--color-content-1);
     transition: all 0.4s ease-in-out;
 }
 
@@ -197,7 +197,7 @@ a {
     transition: all 0.4s ease-in-out;
     width: 65%;
     height: 100%;
-    background-color: hsla(271, 62%, 28%, 0.81);
+    background-color: var(--color-content-1);
     position: absolute;
     left: 0;
     top: 0;
@@ -220,6 +220,7 @@ a {
     object-fit: cover;
     transition: all 0.4s ease-in-out;
     filter: grayscale(0);
+    box-shadow: var(--box-shadow-2);
 }
 
 .header-content .right-header {
@@ -242,7 +243,7 @@ a {
 }
 
 .name span {
-    color: hsla(271, 62%, 28%, 0.81);
+    color: var(--color-content-1);
 }
 
 .name::after {
@@ -283,7 +284,7 @@ a {
 .about-container .right-about .about-item:hover {
     cursor: default;
     transform: translateY(-5px);
-    border: 1px solid hsla(271, 62%, 28%, 0.81);
+    border: 1px solid var(--color-content-1);
     box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
 
@@ -296,7 +297,7 @@ a {
 .about-container .right-about .about-item .abt-text .large-text {
     font-size: 3rem;
     font-weight: 700;
-    color: hsla(271, 62%, 28%, 0.81);
+    color: var(--color-content-1);
 }
 
 .about-container .right-about .about-item .abt-text .small-text {
@@ -375,7 +376,7 @@ a {
     top: 0;
     left: 0;
     height: 100%;
-    background-color: hsla(271, 62%, 28%, 0.81);
+    background-color: var(--color-content-1);
     transition: all 0.4s ease-in-out;
     width: 60%;
 }
@@ -442,7 +443,7 @@ a {
     position: absolute;
     left: -27px;
     top: 0;
-    background-color: hsla(271, 62%, 28%, 0.81);
+    background-color: var(--color-content-1);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -509,7 +510,7 @@ a {
 .portfolios .portfolio-item .hover-items {
     width: 100%;
     height: 100%;
-    background-color: hsla(271, 62%, 28%, 0.81);
+    background-color: var(--color-content-1);
     position: absolute;
     left: 0;
     top: 0;
@@ -607,7 +608,7 @@ a {
 .blogs .blog .blog-text {
     margin-top: -7px;
     padding: 1.1rem;
-    border-top: 8px solid hsla(271, 62%, 28%, 0.81);
+    border-top: 8px solid var(--color-content-1);
 }
 
 .blogs .blog .blog-text h4 {
@@ -689,7 +690,7 @@ a {
 }
 
 .contact-content-con .left-contact .contact-icon a:hover {
-    background-color: hsla(271, 62%, 28%, 0.81);
+    background-color: var(--color-content-1);
 }
 
 .contact-content-con .left-contact .contact-icon a:hover i {
@@ -824,7 +825,7 @@ a {
     padding-left: 0;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     header {
         padding: 0 !important;
     }
@@ -972,7 +973,6 @@ a {
 
 @media screen and (max-width: 1432px) {
     .container {
-        /* padding: 7rem 11rem; */
     }
 
     .contact-content-con {
@@ -1051,7 +1051,6 @@ a {
 
 @media screen and (max-width: 970px) {
     .container {
-        /* padding: 7rem 6rem; */
     }
 
     .about-container .left-about {
@@ -1088,7 +1087,6 @@ a {
 
 @media screen and (max-width: 700px) {
     .container {
-        /* padding: 7rem 3rem; */
     }
 
     .about-stats .progress-bars {
@@ -1114,6 +1112,26 @@ a {
     .main-title h2 .bg-text {
         font-size: 4rem;
     }
+} */
+
+/*** Media queries ***/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }
 
-/*# sourceMappingURL=styles.css.map */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

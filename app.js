@@ -123,5 +123,7 @@
 
   document.querySelector(".theme-btn").addEventListener("click", () => {
     document.body?.classList.toggle("light-mode");
+    document.getElementById("theme-icon")?.classList.toggle("fa-sun");
+    document.getElementById("theme-icon")?.classList.toggle("fa-moon");
   });
 })();

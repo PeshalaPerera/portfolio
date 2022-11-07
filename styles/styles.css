@@ -100,6 +100,12 @@ a {
     align-content: center;
     align-items: center;
     justify-content: center;
+    padding-inline: 1em;
+}
+
+.main-content main {
+    height: 100vh;
+    overflow-y: auto;
 }
 
 /* Main container */
@@ -179,7 +185,7 @@ a {
     transition: all 0.4s ease-in-out;
 }
 
-/* Main page styles*/
+/* Home page styles*/
 
 .header-content {
     display: grid;

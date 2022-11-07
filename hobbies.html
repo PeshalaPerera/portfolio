@@ -4,8 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
+        <title>Portfolio | Hobbies</title>
         <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="icon" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,36 +17,44 @@
             referrerpolicy="no-referrer"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         />
     </head>
 
-    <body class="main-content">
-        <div class="blogs-content">
-            <div class="main-title">
-                <h2>My <span>Hobbies</span></h2>
+    <body>
+        <div id="main-body">
+            <div class="main-content">
+                <main class="container active">
+                    <div class="blogs-content">
+                        <div class="main-title">
+                            <h2>My <span>Hobbies</span></h2>
+                        </div>
+                        <div class="about-container">
+                            <div class="left-about">
+                                <ul>
+                                    <li>Reading Books</li>
+                                    <li>Photography</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img loading="lazy" src="img/hobbies.jpeg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <ul>
-                        <li>Reading Books</li>
-                        <li>Photography</li>
-                    </ul>
+            <div class="sub-content">
+                <div class="sub-content-header">
+                    <div class="theme-btn">
+                        <i id="theme-icon" class="fas fa-sun"></i>
+                    </div>
                 </div>
-                <div>
-                    <img loading="lazy" src="img/hobbies.jpeg" alt="" />
+                <div class="sub-content-body">
+                    <div id="navigation"></div>
                 </div>
             </div>
         </div>
-
-        <!-- Begin Nav Bar-->
-        <div id="navigation"></div>
-        <!-- End Nav Bar-->
-
-        <div class="theme-btn">
-            <i class="fas fa-adjust"></i>
-        </div>
-        <script src="app.js"></script>
+        <script defer src="app.js"></script>
     </body>
 </html>

@@ -4,8 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
+        <title>Portfolio | About</title>
         <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="icon" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,120 +17,103 @@
             referrerpolicy="no-referrer"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         />
     </head>
 
-    <body class="main-content">
-        <!--Begin Header-->
-        <nav class="header-container" id="header">
-            <div class="sub-container">
-                <div class="header-nav" id="header-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="blogs.html">Blogs</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li>
-                            <label class="switch">
-                                <input id="theme" type="checkbox" />
-                                <span class="slider round"></span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
+    <body>
+        <div id="main-body">
+            <div class="main-content">
+                <main class="container active">
+                    <div class="main-title">
+                        <h2>About <span>me</span></h2>
+                    </div>
+                    <div class="about-container">
+                        <div class="left-about">
+                            <h4>Information About me</h4>
+                            <p>
+                                A dedicated, passionate and hardworking individual with a strong motivational drive of
+                                becoming a successful, well-qualified professional in the industry. A flexible,
+                                supportive and responsible team player with a practiced aptitude for leadership. A good
+                                listener and a fast learner with ability to work under pressure and in foreign
+                                environment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <h4 class="stat-title">My Skills</h4>
+                        <div class="progress-bars">
+                            <div class="progress-bar">
+                                <p class="prog-title">html5</p>
+                                <div class="progress-con">
+                                    <p class="prog-text">80%</p>
+                                    <div class="progress">
+                                        <span class="html"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <p class="prog-title">css3</p>
+                                <div class="progress-con">
+                                    <p class="prog-text">95%</p>
+                                    <div class="progress">
+                                        <span class="css"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <p class="prog-title">javascript</p>
+                                <div class="progress-con">
+                                    <p class="prog-text">75%</p>
+                                    <div class="progress">
+                                        <span class="js"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <p class="prog-title">ReactJS</p>
+                                <div class="progress-con">
+                                    <p class="prog-text">75%</p>
+                                    <div class="progress">
+                                        <span class="react"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <p class="prog-title">NodeJS</p>
+                                <div class="progress-con">
+                                    <p class="prog-text">87%</p>
+                                    <div class="progress">
+                                        <span class="node"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <p class="prog-title">Python</p>
+                                <div class="progress-con">
+                                    <p class="prog-text">70%</p>
+                                    <div class="progress">
+                                        <span class="python"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
-        </nav>
-        <!--End Header-->
-
-        <div class="main-title">
-            <h2>About <span>me</span></h2>
-        </div>
-
-        <div class="about-container">
-            <div class="left-about">
-                <h4>Information About me</h4>
-                <p>
-                    A dedicated, passionate and hardworking individual with a strong motivational drive of becoming a
-                    successful, well-qualified professional in the industry. A flexible, supportive and responsible team
-                    player with a practiced aptitude for leadership. A good listener and a fast learner with ability to
-                    work under pressure and in foreign environment.
-                </p>
-            </div>
-        </div>
-
-        <div class="about-stats">
-            <h4 class="stat-title">My Skills</h4>
-            <div class="progress-bars">
-                <div class="progress-bar">
-                    <p class="prog-title">html5</p>
-                    <div class="progress-con">
-                        <p class="prog-text">80%</p>
-                        <div class="progress">
-                            <span class="html"></span>
-                        </div>
+            <div class="sub-content">
+                <div class="sub-content-header">
+                    <div class="theme-btn">
+                        <i id="theme-icon" class="fas fa-sun"></i>
                     </div>
                 </div>
-                <div class="progress-bar">
-                    <p class="prog-title">css3</p>
-                    <div class="progress-con">
-                        <p class="prog-text">95%</p>
-                        <div class="progress">
-                            <span class="css"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="progress-bar">
-                    <p class="prog-title">javascript</p>
-                    <div class="progress-con">
-                        <p class="prog-text">75%</p>
-                        <div class="progress">
-                            <span class="js"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="progress-bar">
-                    <p class="prog-title">ReactJS</p>
-                    <div class="progress-con">
-                        <p class="prog-text">75%</p>
-                        <div class="progress">
-                            <span class="react"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="progress-bar">
-                    <p class="prog-title">NodeJS</p>
-                    <div class="progress-con">
-                        <p class="prog-text">87%</p>
-                        <div class="progress">
-                            <span class="node"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="progress-bar">
-                    <p class="prog-title">Python</p>
-                    <div class="progress-con">
-                        <p class="prog-text">70%</p>
-                        <div class="progress">
-                            <span class="python"></span>
-                        </div>
-                    </div>
+                <div class="sub-content-body">
+                    <div id="navigation"></div>
                 </div>
             </div>
         </div>
-
-        <!-- Begin Nav Bar-->
-        <div id="navigation"></div>
-        <!-- End Nav Bar-->
-
-        <div class="theme-btn">
-            <i class="fas fa-adjust"></i>
-        </div>
-
-        <script src="app.js"></script>
+        <script defer src="app.js"></script>
     </body>
 </html>

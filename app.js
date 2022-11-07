@@ -57,51 +57,46 @@
             <nav class="controls">
                 <div class="controls-wrapper">
                     <a href="${indexPage}">
-                        <div class="control fas fa-home ${getStyles(
-                          isIndexPageActive
-                        )}">
+                        <div class="control ${getStyles(isIndexPageActive)}">
+                            <i class="fas fa-home"></i>
                             <span>Home</span>
                         </div>
                     </a>
                     <a href="${aboutPage}">
-                        <div class="control fas fa-user ${getStyles(
-                          isAboutPageActive
-                        )}">
+                        <div class="control ${getStyles(isAboutPageActive)}">
+                            <i class="fas fa-user"></i>
                             <span>About</span>
                         </div>
                     </a>
                     <a href="${educationPage}">
-                        <div class="control fas fa-briefcase ${getStyles(
+                        <div class="control ${getStyles(
                           isEducationPageActive
                         )}">
+                            <i class="fas fa-briefcase"></i>
                             <span>Education</span>
                         </div>
                     </a>
                     <a href="${skillsPage}">
-                        <div class="control far fa-newspaper ${getStyles(
-                          isSkillsPageActive
-                        )}">
+                        <div class="control ${getStyles(isSkillsPageActive)}">
+                            <i class="fas fa-code"></i>
                             <span>Works</span>
                         </div>
                     </a>
                     <a href="${blogsPage}">
-                        <div class="control far fa-newspaper ${getStyles(
-                          isBlogsPageActive
-                        )}">
+                        <div class="control ${getStyles(isBlogsPageActive)}">
+                            <i class="fas fa-newspaper"></i>
                             <span>Blogs</span>
                         </div>
                     </a>
                     <a href="${hobbiesPage}">
-                        <div class="control fas fa-envelope-open ${getStyles(
-                          isHobbiesPageActive
-                        )}">
+                        <div class="control ${getStyles(isHobbiesPageActive)}">
+                            <i class="fas fa-star"></i>
                             <span>Hobbies</span>
                         </div>
                     </a>
                     <a href="${contactPage}">
-                        <div class="control fas fa-envelope-open ${getStyles(
-                          isContactPageActive
-                        )}">
+                        <div class="control ${getStyles(isContactPageActive)}">
+                            <i class="fas fa-envelope-open"></i>
                             <span>Contact</span>
                         </div>
                     </a>

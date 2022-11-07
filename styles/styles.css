@@ -180,7 +180,7 @@ a {
 .controls-wrapper .control {
     cursor: pointer;
     overflow: hidden;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 1rem;
     letter-spacing: 0.25rem;
     text-transform: uppercase;

@@ -81,7 +81,7 @@
                         <div class="control far fa-newspaper ${getStyles(
                           isSkillsPageActive
                         )}">
-                            <span>Skills</span>
+                            <span>Works</span>
                         </div>
                     </a>
                     <a href="${blogsPage}">

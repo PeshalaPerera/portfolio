@@ -108,6 +108,27 @@ a {
     overflow-y: auto;
 }
 
+.page-title {
+    text-align: center;
+    width: 100%;
+}
+
+.page-title h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.page-title h2 span {
+    color: var(--color-content-1);
+}
+
+.page-content {
+    height: fit-content;
+    padding: 0em 3em;
+}
+
 /* Main container */
 
 .container {
@@ -496,7 +517,7 @@ a {
 
 .portfolios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
 }
@@ -639,10 +660,6 @@ a {
     padding-top: 3.5rem;
 }
 
-.contact-content-con .left-contact {
-    flex: 2;
-}
-
 .contact-content-con .left-contact h4 {
     margin-top: 1rem;
     font-size: 2rem;
@@ -652,6 +669,10 @@ a {
 .contact-content-con .left-contact p {
     margin: 1rem 0;
     line-height: 2rem;
+}
+.contact-content-con .left-contact .contact-info {
+    display: grid;
+    justify-items: start;
 }
 
 .contact-content-con .left-contact .contact-info .contact-item {
@@ -668,6 +689,10 @@ a {
 .contact-content-con .left-contact .contact-info .contact-item .icon {
     display: grid;
     grid-template-columns: 40px 1fr;
+}
+
+.contact-content-con .left-contact .contact-info .contact-item .icon span {
+    color: var(--color-content-1);
 }
 
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
@@ -798,33 +823,6 @@ a {
     background-color: hsla(271, 62%, 28%, 0.81);
     transform: translateX(0);
     transition: all 0.4s ease-out;
-}
-
-.main-title {
-    text-align: center;
-}
-
-.main-title h2 {
-    position: relative;
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.main-title h2 span {
-    color: hsla(271, 62%, 28%, 0.81);
-}
-
-.main-title h2 .bg-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: var(--color-grey-5);
-    transition: all 0.4s ease-in-out;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    font-weight: 800;
-    font-size: 6.3rem;
 }
 
 .about-container .left-about p {

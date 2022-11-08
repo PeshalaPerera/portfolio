@@ -154,6 +154,24 @@ a {
     }
 }
 
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-content-1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-grey-2);
+    border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-grey-4);
+}
+
 /* Theme switcher */
 
 .theme-btn {
@@ -289,88 +307,48 @@ a {
 /* About page styles*/
 
 .about-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 3.5rem;
-    padding-bottom: 5rem;
+    margin: 3rem;
 }
 
-.about-container .right-about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-}
-
-.about-container .right-about .about-item {
-    border: 1px solid var(--color-grey-5);
-    border-radius: 5px;
-    transition: all 0.4s ease-in-out;
-    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.about-container .right-about .about-item:hover {
-    cursor: default;
-    transform: translateY(-5px);
-    border: 1px solid var(--color-content-1);
-    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-}
-
-.about-container .right-about .about-item .abt-text {
-    padding: 1.5rem;
+.about-container section:first-child {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.about-container .right-about .about-item .abt-text .large-text {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--color-content-1);
-}
-
-.about-container .right-about .about-item .abt-text .small-text {
-    padding-left: 3rem;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    color: var(--color-grey-1);
-    letter-spacing: 2px;
-}
-
-.about-container .right-about .about-item .abt-text .small-text::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 15px;
-    width: 2rem;
-    height: 2px;
-    background-color: var(--color-grey-5);
-}
-
-.about-container .left-about {
-    padding-right: 5rem;
-}
-
-.about-container .left-about p {
+.about-description p {
     line-height: 2rem;
     padding: 1rem;
     color: var(--color-grey-1);
 }
 
-.about-container .left-about h4 {
+.about-description h4 {
+    color: var(--color-content-1);
     font-size: 2rem;
+    padding-inline: 1rem;
     text-transform: uppercase;
 }
 
-.about-container .right-about {
-    padding: 1rem;
-}
-
-.about-container .right-about img {
-    width: 100%;
-}
-
 .about-stats {
-    padding-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.about-stats .stat-title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 2.5rem 0;
+    position: relative;
+}
+
+.about-stats .stat-title::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--color-grey-5);
+    transform: translateX(-50%);
 }
 
 .about-stats .progress-bars {
@@ -414,49 +392,6 @@ a {
     background-color: var(--color-content-1);
     transition: all 0.4s ease-in-out;
     width: 60%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-    width: 80%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-    width: 95%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
-    width: 75%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-    width: 60%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-    width: 87%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .python {
-    width: 70%;
-}
-
-.stat-title {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 3.5rem 0;
-    position: relative;
-}
-
-.stat-title::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 40%;
-    height: 1px;
-    background-color: var(--color-grey-5);
-    transform: translateX(-50%);
 }
 
 /* About page styles*/
@@ -841,7 +776,6 @@ a {
     opacity: 1;
     transform: scale(1);
 }
-
 
 /* @media screen and (max-width: 600px) {
     header {

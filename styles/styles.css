@@ -238,9 +238,8 @@ p {
 .site-footer {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-    padding-inline: 2em;
 }
 
 .site-footer .copyright-text {

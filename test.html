@@ -4,8 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
+        <title>Portfolio | Contact</title>
         <link rel="stylesheet" href="styles/test.css" />
+        <link rel="icon" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -24,27 +25,105 @@
     <body>
         <div id="main-body">
             <div class="main-content">
-                <main class="container header active">
-                    <div class="header-content">
-                        <div class="left-header">
-                            <div class="h-shape"></div>
-                            <div class="image">
-                                <img loading="lazy" src="img/hero.png" alt="owner" />
+                <main class="container active">
+                    <div class="page-title">
+                        <h2>Contact <span>Me</span></h2>
+                    </div>
+                    <div class="page-content">
+                        <div class="contact-container">
+                            <div class="contact-content-con">
+                                <div class="left-contact">
+                                    <h4>Let's Connect!</h4>
+                                    <div class="contact-info">
+                                        <div class="contact-item">
+                                            <div class="icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Location</span>
+                                            </div>
+                                            <p>: Thalawathugoda, Pannipitiya</p>
+                                        </div>
+                                        <div class="contact-item">
+                                            <div class="icon">
+                                                <i class="fas fa-envelope"></i>
+                                                <span>Email</span>
+                                            </div>
+                                            <p>
+                                                <span>: peshala.20201256@iit.ac.lk</span>
+                                            </p>
+                                        </div>
+                                        <div class="contact-item">
+                                            <div class="icon">
+                                                <i class="fas fa-user-graduate"></i>
+                                                <span>Education</span>
+                                            </div>
+                                            <p>
+                                                <span>: University of Westminster UK</span>
+                                            </p>
+                                        </div>
+                                        <div class="contact-item">
+                                            <div class="icon">
+                                                <i class="fas fa-user-graduate"></i>
+                                                <span>Mobile Number</span>
+                                            </div>
+                                            <p>
+                                                <span>: 07522670617</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-contact">
+                                    <form action="" class="contact-form">
+                                        <div class="input-control i-c-2">
+                                            <input type="text" required placeholder="Enter your Name" />
+                                            <input type="email" required placeholder="Enter your email" />
+                                        </div>
+                                        <div class="input-control">
+                                            <input type="text" required placeholder="What is the query about?" />
+                                        </div>
+                                        <div class="input-control">
+                                            <textarea
+                                                name=""
+                                                id=""
+                                                cols="15"
+                                                rows="8"
+                                                placeholder="Your message goes here..."
+                                            ></textarea>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                        <div class="right-header">
-                            <h1 class="name heart">
-                                Hi There! <br />
-                                I'm <span>Peshala Perera.</span>
-                            </h1>
-                        </div>
                     </div>
+                    <footer>
+                        <hr />
+                        <div class="site-footer">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2022</p>
+                            </div>
+                            <div class="contact-icons">
+                                <div class="contact-icon">
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://twitter.com/" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://github.com/" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
                 </main>
             </div>
             <div class="sub-content">
                 <div class="sub-content-header">
                     <div class="theme-btn">
-                        <i class="fas fa-adjust"></i>
+                        <i id="theme-icon" class="fas fa-sun"></i>
                     </div>
                 </div>
                 <div class="sub-content-body">

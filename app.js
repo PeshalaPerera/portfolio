@@ -119,8 +119,10 @@
     </footer>`;
   }
 
-  document.getElementById("navigation").innerHTML = getNavigationHTML();
-  document.getElementById("footer").innerHTML = getFooterHTML();
+  try {
+    document.getElementById("navigation").innerHTML = getNavigationHTML();
+    document.getElementById("footer").innerHTML = getFooterHTML();
+  } catch (error) {}
 
   [...document.querySelectorAll(".control")].forEach((button) => {
     button.addEventListener("click", function () {

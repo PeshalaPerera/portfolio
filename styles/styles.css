@@ -345,6 +345,17 @@ p {
     padding: 0.5rem;
 }
 
+.about-image img {
+    border-radius: 2em;
+    background-color: var(--color-black);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    filter: grayscale(0);
+    box-shadow: var(--box-shadow-2);
+}
+
 .about-stats {
     margin-top: 4rem;
 }

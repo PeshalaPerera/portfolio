@@ -57,6 +57,11 @@ a {
     display: inline-block;
 }
 
+p {
+    word-break: break-all;
+    white-space: normal;
+}
+
 /* Layout */
 
 #main-body {
@@ -472,6 +477,38 @@ a {
 }
 
 /* Education page styles*/
+
+.education-container {
+    margin: 1rem;
+}
+
+.educations {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.education {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.educations details summary {
+    cursor: pointer;
+}
+
+.educations details summary h2 {
+    color: var(--color-content-1);
+}
+
+.education-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 1rem;
+}
 
 .timeline {
     display: grid;

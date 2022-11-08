@@ -281,10 +281,12 @@ a {
 
 .name {
     font-size: 3rem;
+    /*
     animation-name: beat;
     animation-duration: 1s;
     animation-delay: 0.9ms;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; 
+    */
 }
 
 .name span {

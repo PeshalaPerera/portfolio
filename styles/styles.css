@@ -330,6 +330,16 @@ a {
     text-transform: uppercase;
 }
 
+.about-image figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image figure figcaption {
+    padding: 0.5rem;
+}
+
 .about-stats {
     margin-top: 4rem;
 }

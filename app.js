@@ -18,7 +18,6 @@
     const blogsPage = "blogs.html";
     const contactPage = "contact.html";
     const educationPage = "education.html";
-    const hobbiesPage = "hobbies.html";
     const skillsPage = "skills.html";
 
     let isIndexPageActive = false;
@@ -26,7 +25,6 @@
     let isBlogsPageActive = false;
     let isContactPageActive = false;
     let isEducationPageActive = false;
-    let isHobbiesPageActive = false;
     let isSkillsPageActive = false;
 
     switch (currentPage) {
@@ -44,9 +42,6 @@
         break;
       case educationPage:
         isEducationPageActive = true;
-        break;
-      case hobbiesPage:
-        isHobbiesPageActive = true;
         break;
       case skillsPage:
         isSkillsPageActive = true;
@@ -86,12 +81,6 @@
                         <div class="control ${getStyles(isBlogsPageActive)}">
                             <i class="fas fa-newspaper"></i>
                             <span>Blogs</span>
-                        </div>
-                    </a>
-                    <a href="${hobbiesPage}">
-                        <div class="control ${getStyles(isHobbiesPageActive)}">
-                            <i class="fas fa-star"></i>
-                            <span>Hobbies</span>
                         </div>
                     </a>
                     <a href="${contactPage}">

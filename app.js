@@ -94,7 +94,33 @@
         `;
   }
 
+  function getFooterHTML() {
+    return `<footer>
+        <hr />
+        <div class="site-footer">
+            <div class="copyright-text">
+                <p>Copyright &copy; <time datetime="2022">2022</time></p>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>     
+    </footer>`;
+  }
+
   document.getElementById("navigation").innerHTML = getNavigationHTML();
+  document.getElementById("footer").innerHTML = getFooterHTML();
 
   [...document.querySelectorAll(".control")].forEach((button) => {
     button.addEventListener("click", function () {

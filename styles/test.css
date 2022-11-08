@@ -811,9 +811,7 @@ p {
     transform: scale(1);
 }
 
-
-.site-footer
-{
+.site-footer {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -822,9 +820,7 @@ p {
     padding-right: 30px;
 }
 
-
-.site-footer .copyright-text
-{
+.site-footer .copyright-text {
     margin-top: 1rem;
 }
 

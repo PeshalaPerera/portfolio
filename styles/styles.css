@@ -780,22 +780,74 @@ p {
 
 /*** Media queries ***/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+    #main-body {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        justify-items: stretch !important;
+    }
+
+    .sub-content-header {
+        display: none !important;
+    }
+
+    .controls .controls-wrapper {
+        display: flex !important;
+    }
+
+    .main-content main {
+        height: 90vh !important;
+    }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 768px) {
+    .header-content {
+        grid-template-columns: auto;
+    }
+
+    .name {
+        padding-inline: 0.5em;
+    }
+
+    .education {
+        grid-template-columns: auto !important;
+    }
+
+    .education .education-content {
+        padding: 0 !important;
+    }
+
+    .skills-content,
+    .blogs {
+        grid-template-columns: auto !important;
+    }
+
+    .page-content {
+        padding: 0;
+    }
+
+    .site-footer {
+        flex-direction: column;
+    }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (max-width: 1100px) {
+    .controls-wrapper .control {
+        min-width: 1em;
+        max-width: 1.5em;
+        justify-content: center;
+    }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+    .controls-wrapper .control span {
+        display: none;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+    #main-body {
+        grid-template-columns: 6fr 1fr;
+    }
+
+    .main-content,
+    .sub-content {
+        width: auto;
+    }
 }

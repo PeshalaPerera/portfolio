@@ -131,7 +131,7 @@ p {
 
 .page-content {
     height: fit-content;
-    padding: 0em 3em;
+    padding: 0 3em;
 }
 
 /* Main container */
@@ -506,7 +506,7 @@ p {
 .blogs .blog:hover img {
     filter: grayscale(0);
     transform: scale(1.1);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
 
 .blogs .blog img {
@@ -574,6 +574,10 @@ p {
     flex-direction: row;
     gap: 2em;
     padding: 1rem;
+}
+
+.education-image img {
+    width: 100%;
 }
 
 /* Works page styles*/

@@ -829,6 +829,17 @@ p {
     .site-footer {
         flex-direction: column;
     }
+
+    .contact-content-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .contact-content-con .right-contact {
+        margin-inline: 3rem;
+    }
 }
 
 @media only screen and (max-width: 1100px) {

@@ -58,7 +58,7 @@ a {
 }
 
 p {
-    word-break: break-all;
+    word-break: normal;
     white-space: normal;
 }
 
@@ -341,12 +341,11 @@ p {
 
 .name {
     font-size: 3rem;
-    /*
     animation-name: beat;
     animation-duration: 1s;
     animation-delay: 0.9ms;
-    animation-iteration-count: infinite; 
-    */
+    animation-iteration-count: infinite;
+
 }
 
 .name span {
@@ -361,6 +360,7 @@ p {
     0% {
         transform: scale(0.6);
     }
+
     50% {
         transform: scale(1);
     }
@@ -375,6 +375,11 @@ p {
 .about-container section:first-child {
     display: flex;
     justify-content: space-evenly;
+}
+
+.about-container section article figure :not(img) {
+    color: #a013a3;
+    font-weight: bold;
 }
 
 .about-description p {
@@ -448,6 +453,11 @@ p {
 .about-stats .progress-bars .progress-bar .prog-title {
     text-transform: uppercase;
     font-weight: 500;
+    text-shadow: 1px 1px rgb(247 247 247);
+    background: linear-gradient(to right, #df15ee,
+                    #e213bc, #cf23cf, #8d13b9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con {
@@ -455,8 +465,8 @@ p {
     align-items: center;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
-    color: var(--color-grey-2);
+.about-stats .progress-bars .progress-bar .progress-con:nth-child(2) {
+    color: rgb(255, 255, 255);
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress {
@@ -467,12 +477,11 @@ p {
     position: relative;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
+.about-stats .progress-bars .progress-bar .progress-con .progress progress {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    background-color: var(--color-content-1);
     transition: all 0.4s ease-in-out;
     width: 60%;
 }
@@ -525,7 +534,7 @@ p {
     border-top: 8px solid var(--color-content-1);
 }
 
-.blogs .blog .blog-text h4 {
+.blogs .blog div>h4 {
     font-size: 1.5rem;
     margin-bottom: 0.7rem;
     transition: all 0.4s ease-in-out;
@@ -534,12 +543,6 @@ p {
 
 .blogs .blog .blog-text h4:hover {
     color: var(--color-content-1);
-}
-
-.blogs .blog .blog-text p {
-    color: var(--color-grey-2);
-    line-height: 2rem;
-    padding-bottom: 1rem;
 }
 
 /* Education page styles*/
@@ -574,6 +577,26 @@ p {
     flex-direction: row;
     gap: 2em;
     padding: 1rem;
+}
+
+/* unvisited link */
+.education-content a:link {
+    color: red;
+}
+
+/* visited link */
+.education-content a:visited {
+    color: hotpink;
+}
+
+/* mouse over link */
+.education-content a:hover {
+    color: rgb(235, 163, 62);
+}
+
+/* selected link */
+.education-content a:active {
+    color: blue;
 }
 
 .education-image img {
@@ -680,6 +703,7 @@ p {
     margin: 1rem 0;
     line-height: 2rem;
 }
+
 .contact-content-con .left-contact .contact-info {
     display: grid;
     justify-items: start;
@@ -780,6 +804,19 @@ p {
 .contact-content-con .right-contact .submit-btn {
     display: flex;
     justify-content: flex-start;
+}
+
+.contact-content-con .right-contact .input-control input[type=email]:hover {
+    background-color: hsla(0, 21%, 55%, 0.6)
+}
+
+.contact-content-con .right-contact .input-control input[type=text]:hover {
+    background-color: hsla(0, 21%, 55%, 0.6)
+}
+
+.contact-content-con .right-contact .input-control input[type=email]:valid,
+.contact-content-con .right-contact .input-control input[type=text]:valid {
+    border: 2px solid green;
 }
 
 /*** Media queries ***/
